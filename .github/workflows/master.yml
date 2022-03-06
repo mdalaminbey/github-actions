@@ -15,6 +15,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: ftp.doatkolom.com
-        username: doatkolom@doatkolom.com
-        password: QTk,zfQ*o5n1
+        username: ${{ SECRETS.FTP_USERNAME }}
+        password: ${{ SECRETS.FTP_PASSWORD }}
         server-dir: /
